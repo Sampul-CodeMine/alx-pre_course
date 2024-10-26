@@ -78,7 +78,7 @@ git push https://github.com/betascribbles/my-repo-001.git --token <pat>
 
 ### SSH Key
 
-[![Git SSH auth video demo](https://img.youtube.com/watch?v=X8Mp-s6ZQVo&embeds_referring_euri=https%3A%2F%2Fintranet.alxswe.com%2F&source_ve_path=OTY3MTQ)](https://www.youtube.com/watch?v=X8Mp-s6ZQVo&embeds_referring_euri=https%3A%2F%2Fintranet.alxswe.com%2F&source_ve_path=OTY3MTQ)
+[![Git SSH auth video demo](https://img.youtube.com/watch?v=X8Mp-s6ZQVo)](https://www.youtube.com/watch?v=X8Mp-s6ZQVo)
 
 #### Generate an SSH Key
 
