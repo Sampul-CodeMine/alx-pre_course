@@ -85,12 +85,14 @@ First, head to the guide for your particular operating system. This will give yo
 
 ### Understanding important concepts about Docker
 
-Docker images: A Docker image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries, and settings.
-Docker containers: A Docker container is a runnable instance of a Docker image. It includes the application code and all of its dependencies, but it runs isolated from other containers on the same host.
-Dockerfile: A Dockerfile is a text file that contains the instructions for building a custom Docker image. It tells Docker what software to install, what configuration settings to use, and so on.
-Docker Hub: Docker Hub is a public registry of Docker images. It allows you to find and share images with other users.
-Docker Compose: Docker Compose is a tool that allows you to define and run multi-container Docker applications. It makes it easy to manage complex applications that require multiple containers.
-Important Docker Commands
+- **Docker images**: A Docker image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries, and settings.
+- **Docker containers**: A Docker container is a runnable instance of a Docker image. It includes the application code and all of its dependencies, but it runs isolated from other containers on the same host.
+- **Dockerfile**: A Dockerfile is a text file that contains the instructions for building a custom Docker image. It tells Docker what software to install, what configuration settings to use, and so on.
+- **Docker Hub**: Docker Hub is a public registry of Docker images. It allows you to find and share images with other users.
+- **Docker Compose**: Docker Compose is a tool that allows you to define and run multi-container Docker applications. It makes it easy to manage complex applications that require multiple containers.
+
+### Important Docker Commands
+
 docker pull - This command is used to pull a Docker ubuntu image from a registry.
 docker run - creates and starts a Docker container from an image
 docker start - is used for containers that have been previously created but are currently stopped. If you want to create and start a new container in a single step, you can use the docker run command.
