@@ -71,17 +71,17 @@ First, head to the guide for your particular operating system. This will give yo
 
 [![Setting Up Ubuntu 20.04 Docker Container](https://img.youtube.com/watch?v=qX7nyMijOIo)](https://www.youtube.com/watch?v=qX7nyMijOIo)
 
-- 1. Go to the Docker website: https://www.docker.com/products/docker-desktop
+1. Go to the Docker website: https://www.docker.com/products/docker-desktop
 
 ![Install Docker](1.png)
 
-- 2. Click the “Download for Mac” button to download the latest version of Docker Desktop for Mac.
-- 3. Once the download is complete, double-click the Docker.dmg file to open the installer.
-- 4. Drag the Docker icon to the Applications folder to install Docker Desktop.
+2. Click the “Download for Mac” button to download the latest version of Docker Desktop for Mac.
+3. Once the download is complete, double-click the Docker.dmg file to open the installer.
+4. Drag the Docker icon to the Applications folder to install Docker Desktop.
 
 ![Drag Docker to Application](2.png)
 
-- 5. Open Docker Desktop from the Applications folder.
+5. Open Docker Desktop from the Applications folder.
 
 ### Understanding important concepts about Docker
 
@@ -93,63 +93,85 @@ First, head to the guide for your particular operating system. This will give yo
 
 ### Important Docker Commands
 
-docker pull - This command is used to pull a Docker ubuntu image from a registry.
-docker run - creates and starts a Docker container from an image
-docker start - is used for containers that have been previously created but are currently stopped. If you want to create and start a new container in a single step, you can use the docker run command.
-docker exec - runs a command in a running Docker container.
-docker stop - stops a running Docker container.
-docker ps -a - This command is used to list all of the Docker containers, including those that are not running.
-docker kill - This command is used to forcefully stop a Docker container.
-docker rm - This command is used to remove a Docker container.
-docker images - This command is used to list all of the Docker images that are stored on your machine.
-docker search - This command is used to search for Docker images in a registry.
-docker inspect - This command is used to get detailed information about a Docker container or image.
-docker logs - This command is used to view the logs for a Docker container.
-docker commit - This command is used to create a new Docker image from an existing container.
-docker push - This command is used to push a Docker image to a registry.
-docker tag - This command is used to tag a Docker image with a new name or identifier.
-docker build - This command is used to build a Docker image from a Dockerfile.
-docker compose - This command is used to run a Docker application that is defined in a Docker Compose file.
-Building Ubuntu 20.04 Docker Image for alx projects
-First-Time Setup
-- docker pull ubuntu:20.04 - Pull the ubuntu 20.04 image from docker hub
-docker run -it --name my-ubuntu-container ubuntu:20.04 - This command is used to run a Docker ubuntu 20.04 container.
-How to Use the Container Again
-docker start my-ubuntu-container - starting the container named “my-ubuntu-container” that was created from the Ubuntu 20.04 image.
-docker exec -it my-ubuntu-container /bin/bash - executes the /bin/bash command inside the my-ubuntu-container container in interactive mode.
-docker stop my-ubuntu-container - When you are done and want to stop the “my-ubuntu-container” container, use the following command.
-Windows Subsystem for Linux (WSL)
+- `docker pull` - This command is used to pull a Docker ubuntu image from a registry.
+- `docker run` - creates and starts a Docker container from an image
+- `docker start` - is used for containers that have been previously created but are currently stopped. If you want to create and start a new container in a single step, you can use the `docker run` command.
+- `docker exec` - runs a command in a running Docker container.
+- `docker stop` - stops a running Docker container.
+- `docker ps -a` - This command is used to list all of the Docker containers, including those that are not running.
+- `docker kill` - This command is used to forcefully stop a Docker container.
+- `docker rm` - This command is used to remove a Docker container.
+- `docker images` - This command is used to list all of the Docker images that are stored on your machine.
+- `docker search` - This command is used to search for Docker images in a registry.
+- `docker inspect` - This command is used to get detailed information about a Docker container or image.
+- `docker logs` - This command is used to view the logs for a Docker container.
+- `docker commit` - This command is used to create a new Docker image from an existing container.
+- `docker push` - This command is used to push a Docker image to a registry.
+- `docker tag` - This command is used to tag a Docker image with a new name or identifier.
+- `docker build` - This command is used to build a Docker image from a Dockerfile.
+- `docker compose` - This command is used to run a Docker application that is defined in a Docker Compose file.
+
+### Building Ubuntu 20.04 Docker Image for alx projects
+
+**First-Time Setup**
+
+- `docker pull ubuntu:20.04` - Pull the ubuntu 20.04 image from docker hub
+- `docker run -it --name my-ubuntu-container ubuntu:20.04` - This command is used to run a Docker ubuntu 20.04 container.
+
+**How to Use the Container Again**
+
+- `docker start my-ubuntu-container` - starting the container named “my-ubuntu-container” that was created from the Ubuntu 20.04 image.
+- `docker exec -it my-ubuntu-container /bin/bash` - executes the /bin/bash command inside the my-ubuntu-container container in interactive mode.
+- `docker stop my-ubuntu-container` - When you are done and want to stop the “my-ubuntu-container” container, use the following command.
+
+### Windows Subsystem for Linux (WSL)
+
 Windows Subsystem for Linux (WSL) is a feature of Windows that allows you to run Linux command-line tools and applications directly on Windows, without the need for a virtual machine or dual boot setup.
 
 It is powered by a real Linux kernel, which means that you can run any Linux binary executable on Windows, as long as it is compatible with the x86-64 architecture.
 
 WSL is a popular choice for developers who need to use Linux tools and applications on Windows. It is also a good choice for students who are learning Linux, as it allows them to learn Linux without having to install a separate operating system.
 
-Benefits of using WSL
-Speed: WSL is much faster than running Linux in a virtual machine, as it uses the native Windows kernel.
-Convenience: WSL is more convenient than dual booting, as you can run Linux tools and applications alongside your Windows applications.
-Compatibility: WSL is compatible with a wide range of Linux tools and applications.
-Flexibility: WSL can be used for a variety of purposes, including development, education, and research.
-Setting up WSL in Windows OS
+#### Benefits of using WSL
 
-Microsoft installation tutorial
+1. **Speed**: WSL is much faster than running Linux in a virtual machine, as it uses the native Windows kernel.
+2. **Convenience**: WSL is more convenient than dual booting, as you can run Linux tools and applications alongside your Windows applications.
+3. **Compatibility**: WSL is compatible with a wide range of Linux tools and applications.
+4. **Flexibility**: WSL can be used for a variety of purposes, including development, education, and research.
 
-Enable WSL. Open PowerShell as an administrator and run the following command: 1
-Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux 2
-Install a Linux distribution. Open the Microsoft Store and search for “Linux”. Select the Linux distribution that you want to install and click the “Get” button. Once the distribution is installed, click the “Launch” button to start it. 5
-Create a user account for the Linux distribution. When you start the Linux distribution for the first time, you will be prompted to create a user account. Enter a username and password for your account. 8
-Start using WSL! Once you have created a user account, you can start using WSL to run Linux commands and applications. To do this, open a PowerShell or Command Prompt window and type wsl. This will start a new Linux terminal session.
-Tips for using WSL
-You can install multiple Linux distributions on Windows. To do this, simply repeat the installation process for each distribution.
-You can set the default Linux distribution. To do this, open the Settings app and go to “Apps” > “Features” > “Windows Subsystem for Linux”. Under “Default distribution”, select the distribution that you want to set as the default.
-You can access Windows files from WSL. To do this, use the /mnt/c directory. For example, to access the C:\Windows directory, you would use the /mnt/c/Windows directory.
-You can run Windows applications from WSL. To do this, use the wsl –run command. For example, to run the notepad.exe application, you would use the wsl –run notepad.exe command.
-Extra Resources
-Why Do So Many Software Engineers Use Linux?
+#### Setting up WSL in Windows OS
 
-Learn Docker to the next level
+[![Setting up Ubuntu 20.04 Windows Subsystem for Linux](https://img.youtube.com/watch?v=J24j1Di-Rhc)](https://www.youtube.com/watch?v=J24j1Di-Rhc)
 
-Docker tutorial doc
+[Microsoft installation tutorial](https://learn.microsoft.com/en-us/windows/wsl/install-manual)
 
+1. Enable WSL. Open PowerShell as an administrator and run the following command:
+![Enable WSL](3.png)
 
-Copyright © 2024 ALX, All rights reserved.
+2. Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+![Enable Windows Optional Features](4.png)
+
+3. Install a Linux distribution. Open the Microsoft Store and search for **“Linux”**. Select the Linux distribution that you want to install and click the **“Get”** button. Once the distribution is installed, click the **“Launch”** button to start it.
+![Install from Microsoft Store](5.png)
+
+4. Create a user account for the Linux distribution. When you start the Linux distribution for the first time, you will be prompted to create a user account. Enter a username and password for your account.
+![Create User Account](6.png)
+
+5. Start using WSL! Once you have created a user account, you can start using WSL to run Linux commands and applications. To do this, open a PowerShell or Command Prompt window and type wsl. This will start a new Linux terminal session.
+
+#### Tips for using WSL
+
+- You can install multiple Linux distributions on Windows. To do this, simply repeat the installation process for each distribution.
+- You can set the default Linux distribution. To do this, open the Settings app and go to “Apps” > “Features” > “Windows Subsystem for Linux”. Under “Default distribution”, select the distribution that you want to set as the default.
+- You can access Windows files from WSL. To do this, use the /mnt/c directory. For example, to access the C:\Windows directory, you would use the /mnt/c/Windows directory.
+- You can run Windows applications from WSL. To do this, use the wsl –run command. For example, to run the notepad.exe application, you would use the wsl –run notepad.exe command.
+
+#### Extra Resources
+
+[Why Do So Many Software Engineers Use Linux?](https://www.youtube.com/watch?v=otDOHt_Jges)
+
+[Learn Docker to the next level](https://www.simplilearn.com/tutorials/docker-tutorial/getting-started-with-docker)
+
+[Docker tutorial doc](https://docker-curriculum.com/)
+
+[![Setting up Ubuntu 20.04 Windows Subsystem for Linux](https://img.youtube.com/watch?v=AEoaecrqvyA)](https://www.youtube.com/watch?v=AEoaecrqvyA)
