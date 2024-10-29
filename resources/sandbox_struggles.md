@@ -72,11 +72,11 @@ First, head to the guide for your particular operating system. This will give yo
 [![Setting Up Ubuntu 20.04 Docker Container](https://img.youtube.com/watch?v=qX7nyMijOIo)](https://www.youtube.com/watch?v=qX7nyMijOIo)
 
 - 1. Go to the Docker website: https://www.docker.com/products/docker-desktop
-![Install Docker](resources/1.png)
+![Install Docker](1.png)
 - 2. Click the “Download for Mac” button to download the latest version of Docker Desktop for Mac.
 - 3. Once the download is complete, double-click the Docker.dmg file to open the installer.
 - 4. Drag the Docker icon to the Applications folder to install Docker Desktop.
-![Drag Docker to Application](resources/2.png)
+![Drag Docker to Application](2.png)
 - 5. Open Docker Desktop from the Applications folder.
 
 ### Understanding important concepts about Docker
