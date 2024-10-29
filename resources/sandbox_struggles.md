@@ -57,6 +57,8 @@ First, head to the guide for your particular operating system. This will give yo
 
 #### 1. Docker Installation on Windows
 
+[![Docker Desktop for Windows](https://img.youtube.com/watch?v=rATNU0Fr8zs)](https://www.youtube.com/watch?v=rATNU0Fr8zs)
+
 **Key steps:**
 
 - 1. Download & install docker
@@ -67,18 +69,18 @@ First, head to the guide for your particular operating system. This will give yo
 
 #### 2. Docker Installation on macOS
 
-Go to the Docker website: https://www.docker.com/products/docker-desktop 1
+[![Setting Up Ubuntu 20.04 Docker Container](https://img.youtube.com/watch?v=qX7nyMijOIo)](https://www.youtube.com/watch?v=qX7nyMijOIo)
 
-Click the “Download for Mac” button to download the latest version of Docker Desktop for Mac.
+- 1. Go to the Docker website: https://www.docker.com/products/docker-desktop
+![Install Docker](resources/1.png)
+- 2. Click the “Download for Mac” button to download the latest version of Docker Desktop for Mac.
+- 3. Once the download is complete, double-click the Docker.dmg file to open the installer.
+- 4. Drag the Docker icon to the Applications folder to install Docker Desktop.
+![Drag Docker to Application](resources/2.png)
+- 5. Open Docker Desktop from the Applications folder.
 
-Once the download is complete, double-click the Docker.dmg file to open the installer.
+### Understanding important concepts about Docker
 
-Drag the Docker icon to the Applications folder to install Docker Desktop.
-1
-
-Open Docker Desktop from the Applications folder.
-
-Understanding important concepts about Docker
 Docker images: A Docker image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries, and settings.
 Docker containers: A Docker container is a runnable instance of a Docker image. It includes the application code and all of its dependencies, but it runs isolated from other containers on the same host.
 Dockerfile: A Dockerfile is a text file that contains the instructions for building a custom Docker image. It tells Docker what software to install, what configuration settings to use, and so on.
