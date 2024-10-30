@@ -27,7 +27,7 @@ For this project, please start and connect to your Sandbox `Ubuntu 20.04`.
 
 **Extra resources**:
 
-- Linux - /tmp
+- [Linux - /tmp](https://tldp.org/LDP/Linux-Filesystem-Hierarchy/html/tmp.html)
 
 ## Learning Objectives
 
@@ -52,7 +52,8 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 ## Requirements
 
 - All tasks must be done inside the sandbox `Ubuntu 20.04`
-- Your sandbox must be available at the end of this project - the Checker will access to it at midnight for running the correction!
+- Your sandbox **must be available at the end of this project** - the Checker will access to it at midnight for running the correction!
+- It’s recommended to start the project on a fresh new Sandbox
 
 ### Quiz questions
 
